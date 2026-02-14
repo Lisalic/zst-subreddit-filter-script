@@ -2,26 +2,51 @@
 
 A Python script to filter Reddit data dumps by subreddit. This tool processes compressed Reddit data files (in Zstandard format) and extracts posts/comments from a specific subreddit.
 
-## Requirements
+# Subreddit Filter Script
 
-- Python 3.6+
-- zstandard library (`pip install zstandard`)
+A Python script to filter Reddit data dumps by subreddit. This tool processes compressed Reddit data files (in Zstandard format) and extracts posts/comments from a specific subreddit.
+
+## Installation
+
+### 1. Install Python
+
+- [Windows Installation Guide](https://www.youtube.com/watch?v=e70ykVBazAg)
+- [MacOS Installation Guide](https://www.youtube.com/watch?v=VYmYKeY65nk)
+
+### 2. Install Required Library
+
+Open your terminal/command prompt and run:
+
+```bash
+pip install zstandard
+```
+
+**Windows:** Open Command Prompt or PowerShell  
+**MacOS:** Open Terminal
 
 ## Usage
 
-1. Download a Reddit data dump in Zstandard compressed format
-2. Run the script:
-   ```bash
-   python subreddit-filter-script.py
-   ```
-3. Enter the path to your input .zst file when prompted
-4. Enter the subreddit name to filter (without the 'r/' prefix)
-5. The script will create a new file `filtered_{subreddit}.zst` containing only posts/comments from that subreddit
+### 3. Download Reddit Data
+
+Download a Reddit data dump in Zstandard format
+
+### 4. Run the Script
+
+```bash
+python subreddit-filter-script.py
+```
+
+When prompted:
+
+- Enter the path to your input .zst file
+- Enter the subreddit name to filter (without the 'r/' prefix)
+
+The script will create a new file `filtered_{subreddit}.zst` containing only posts/comments from that subreddit.
 
 ## Example
 
 ```
-Enter the path to your source .zst file: /Users/abc/Documents/subreddit-filterreddit_data.zst
+Enter the path to your source .zst file: /Users/abc/Documents/reddit_data.zst
 Enter the subreddit to filter by: bullying
 ```
 

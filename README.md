@@ -28,9 +28,15 @@ pip install zstandard
 
 ### 3. Download Reddit Data
 
-Download a Reddit data dump in Zstandard format
+Download a Reddit data dump in Zstandard format.
 
 ### 4. Run the Script
+
+1. Open this repository page in your web browser.
+2. Click the green **Code** button and choose **Download ZIP**.
+3. Unzip the downloaded file and copy `subreddit-filter-script.py` to a folder you can find easily.
+
+After you have the file, run the script as shown below.
 
 ```bash
 python subreddit-filter-script.py
